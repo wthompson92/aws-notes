@@ -1,9 +1,7 @@
 # AWS
 
 ## TOC
-
-* [Security, Identity, & Compliance](#security)
-  * [IAM](#IAM)
+* [IAM](#IAM)
   * [Encryption](#encrypt)
   * [RDS](#RDS)
 * [EC2](#EC2)
@@ -24,15 +22,17 @@
 * [Management & Governance](#mg)
 * [Networking & Content Delivery](#ncd)
   * [Route 53](#R53)
-  * [EC](#EC)
-  * [S3](#S3)
+  * [ElasticCache](#EC)
+* [S3](#S3)
 * [DEV TOOLS ](#dev)
   * [ CLI ](#CLI)
   * [ SDK ](#SDK)
-  * [ IAM Roles ](#roles)
-* [Deploy](#deploy)
-* [EBS](#EBS)
-* [Deployment Policies](#dp)
+* [Elastic Beanstalk](#EBS)
+  * [Deployment Modes](#dm)
+  * [Deployment Policies](#dp)
+
+* [CI/CD](#cicd)
+  * [CodeCommit](#cc)
 
 
 # Security
@@ -58,7 +58,8 @@
 * Permissions are governed by Policies (JSON)
 * MFA (Multi Factor Authentication) can be setup
 * IAM has predefined “managed policies”
-![Alt Text](iam.png)
+
+![Alt Text](img/iam.png)
 
 ## Security Groups
 
@@ -84,7 +85,8 @@ error or it’s not launched
 * Storing data on virtual drives (EBS)
 * Distributing load across machines (ELB)
 * Scaling the services using an auto-scaling group (ASG)
-![Alt Text](ec2.png)
+
+![Alt Text](img/ec2.png)
 
 Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) cloud
 
@@ -140,7 +142,7 @@ An AMI includes the following:
 
 ####  Lifecycle of AMI
 
-![Alt Text](amii.png)
+![Alt Text](img/amii.png)
 
 ### Instances
 
@@ -164,7 +166,7 @@ An AMI includes the following:
 Load balancers are servers that forward internet traffic to multiple
 servers (EC2 Instances) downstream
 
-![Alt Text](elb.png)
+![Alt Text](img/elb.png)
 
 ##### Why Use a Load Balancer
 * Spread load across multiple downstream instances
@@ -236,9 +238,42 @@ Launch any of the following resources in the Local Zone:
 * Deploy critical components of your application across multiple Availability Zones, and replicate your data appropriately.
 
 
-# Deploy
 
+# CICD
+
+![Alt Text](img/cicd.png)
+
+## CodeCommit
+
+#### Overview
+
+* Private Git Repos
+* Fully managed by AWS
+* No Size Limit
+* Secure
+* On AWS Cloud
+
+#### Security
+**Authorization**
+* IAM policies
+
+**Authentication**
+* Authentication via SSH or HTTPs
+* Multi Factor Authentication
+
+**Encryption**
+* KMS - Repos at rest KMS
+*  HTTPS / SSH - In transit
+
+#### Notifications
+*
+
+#### Triggers
 
 ### Deployment Policies
 
-![Alt Text](amz.png)
+![Alt Text](img/amz.png)
+
+## CodeBuild
+#### Overview
+* Continous Delivery
