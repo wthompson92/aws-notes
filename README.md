@@ -266,7 +266,7 @@ Launch any of the following resources in the Local Zone:
 *  HTTPS / SSH - In transit
 
 #### Notifications
-*
+
 
 #### Triggers
 
@@ -277,3 +277,17 @@ Launch any of the following resources in the Local Zone:
 ## CodeBuild
 #### Overview
 * Continous Delivery
+
+#### Artifacts
+
+# Elastic Beanstalk
+
+![Alt Text](img/amz.png)
+## All at Once
+![Alt Text](img/al1.png)
+## Rolling
+![Alt Text](img/rolling.png)
+## Rolling w added
+![Alt Text](img/amz.png)
+# Immutable
+![Alt Text](img/imu1.png)
