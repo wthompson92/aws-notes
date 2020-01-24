@@ -282,12 +282,22 @@ Launch any of the following resources in the Local Zone:
 
 # Elastic Beanstalk
 
+## Deployment Policies
+
 ![Alt Text](img/amz.png)
-## All at Once
+
+### All at Once
+
 ![Alt Text](img/al1.png)
-## Rolling
+
+### Rolling
+
 ![Alt Text](img/rolling.png)
-## Rolling w added
-![Alt Text](img/amz.png)
-# Immutable
+
+### Rolling w added
+
+![Alt Text](img/rwa.png)
+
+### Immutable
+
 ![Alt Text](img/imu1.png)
