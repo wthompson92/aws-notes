@@ -1,4 +1,4 @@
-# AWS Assoicate Developer Notes
+# AWS
 
 ## TOC
 
@@ -6,7 +6,6 @@
   * [IAM](#IAM)
   * [Encryption](#encrypt)
   * [RDS](#RDS)
-
 * [EC2](#EC2)
   * [AMI](#AMI)
   * [Zones](#zone)
@@ -15,29 +14,22 @@
   * [ASG](#ASG)
   * [EBS](#EBS)
   * [Elastic Beanstalk](#EB)
-
 * [ Resources ](#resource)
   * [Buckets](#buck)
   * [Objects](#obj)
-
 * [ Storage](#store)
   * [EBS](#EBS)
   * [RDS](#RDS)
-
 * [ Database](#db)
-
 * [Management & Governance](#mg)
-
 * [Networking & Content Delivery](#ncd)
   * [Route 53](#R53)
   * [EC](#EC)
   * [S3](#S3)
-
 * [DEV TOOLS ](#dev)
   * [ CLI ](#CLI)
   * [ SDK ](#SDK)
   * [ IAM Roles ](#roles)
-
 * [Deploy](#deploy)
 * [EBS](#EBS)
 * [Deployment Policies](#dp)
@@ -45,7 +37,7 @@
 
 # Security
 
-## Best Practices
+### Best Practices
 
 * Manage access to AWS resources and APIs using identity federation, IAM users, and IAM roles.
 
@@ -68,8 +60,10 @@
 * IAM has predefined “managed policies”
 ![Alt Text](iam.png)
 
-### Security Groups
-#### Overview
+## Security Groups
+
+### Overview
+
 * Can be attached to multiple instances
 * Locked down to a region / VPC combination
 * Does live “outside” the EC2 – if traffic is blocked the EC2 instance won’t see
@@ -80,8 +74,6 @@ it
 error or it’s not launched
 * All inbound traffic is blocked by default
 * All outbound traffic is authorized by default
-
-# <u> Compute </u>
 
 ## Elastic Compute Cloud (EC2)
 
